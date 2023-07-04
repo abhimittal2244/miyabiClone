@@ -1,0 +1,12 @@
+app-side-nav{
+    display: flex;
+}
+
+.container_fluid{
+    display: flex;
+}
+
+.box1{
+    display: flex;
+    flex-flow:column;
+}

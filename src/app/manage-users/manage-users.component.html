@@ -1,0 +1,65 @@
+<div class="marathon-page-box">
+    <div class="marathon-page-header">
+        <h1>Manage Users</h1>
+            </div>
+    <!-- <form action="#"> -->
+        <div class="marathon-page-options">
+            <div class="custom">
+                <label>Show:</label>
+                <select id="showMarathon">
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="75">75</option>
+                    <option value="100">100</option>
+                </select>
+            </div><div>
+                <ul>
+                    <li>
+                        <input type="search" placeholder="Search">
+                    </li>
+                </ul>
+                    </div> 
+                   </div>
+            <div class="selectIsActive">
+                <a href="#" (click)="changeStyle()" class="filter" id="filterAll" >ALL</a>
+                <a href="#" (click)="changeStyle()" class="filter" id="filterActive" >Active</a>
+                <a href="#" (click)="changeStyle()" class="filter" id="filterInactive" >Inactive</a>
+            </div>
+    <!-- </form> -->
+    <div class="marathon-page-list">
+        <table class="marathon-page-list-table">
+            <tr>
+                <th>Sno<i class="fa fa-sort"></i></th>
+                <th>Profile<i class="fa fa-sort"></i></th>
+                <th>Email<i class="fa fa-sort"></i></th>
+                <th>Instagram Id<i class="fa fa-sort"></i></th>
+                <th>Phone Number<i class="fa fa-sort"></i></th>
+                <th>Send Notification<i class="fa fa-sort"></i></th>
+                <th>Login As User<i class="fa fa-sort"></i></th>
+                <th>Action<i class="fa fa-sort"></i></th>
+             </tr>    
+             <tr class="marathon-list" *ngFor="let item of list; let i = index" [ngClass]="{'even-row':i%2==0, 'odd-row':i%2!=0}">
+                <td>{{i+1}}</td>
+                <td>{{item.username}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.instaId}}</td>
+                <td>{{item.phoneNumber}}</td>
+                <td><i class="fas fa-envelope-open-text notify"></i></td>
+                <td><i class="fa fa-sign-in"></i></td>
+                <td>
+                    <label class="switch ng-star-inserted">
+                        <input id="togBtn" type="checkbox" class="ng-untouched ng-pristine ng-valid">
+                        <div class="slider round">
+                            <span class="on">INACTIVE</span>
+                        </div>
+                    </label>
+                </td>
+             </tr>  
+        </table>
+    </div>
+    <div class="pagination">
+        <label> << Previous</label>
+        <label> 1 </label>
+        <label> Next >></label>
+    </div>
+</div>

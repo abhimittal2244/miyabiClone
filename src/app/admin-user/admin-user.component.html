@@ -1,0 +1,56 @@
+<div class="admin-user-box">
+    <div class="admin-user-header">
+        <h1>Admin User List</h1>
+        <ul>
+            <li>
+                <button class="create-user">CREATE USER</button>
+            </li>
+            </ul>
+            </div>
+    <!-- <form action="#"> -->
+        <div class="admin-user-options">
+            <div class="custom">
+                <label>Show:</label>
+                <select id="showAdmin">
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="400">400</option>
+                    <option value="600">600</option>
+                    <option value="1000">1000</option>
+                </select>
+            </div><div>
+                <ul>
+                    <li>
+                        <input type="search" placeholder="Search">
+                    </li>
+                </ul>
+                    </div> 
+                   </div>
+    <!-- </form> -->
+    <div class="admin-user-list">
+        <table class="admin-user-list-table">
+            <tr>
+                <th>Sno</th>
+                <th>Role</th>
+                <th>Language</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Action</th>
+             </tr>    
+             <tr class="admin-list" *ngFor="let item of list; let i = index" [ngClass]="{'even-row':i%2==0, 'odd-row':i%2!=0}">
+                <td>{{i+1}}</td>
+                <td>{{item.role}}</td>
+                <td>{{item.language}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.email}}</td>
+                <td><button class="add-module">{{item.action}}</button></td>
+                <!-- {{increaseSno()}} -->
+             </tr>  
+        </table>
+    </div>
+    <div class="pagination">
+        <label> << Previous</label>
+        <label> 1 </label>
+        <label> Next >></label>
+    </div>
+</div>

@@ -1,0 +1,133 @@
+.admin-user-header {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    padding-top: 14px;
+    padding-bottom: 0;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+
+    width: 100%;
+    box-shadow: 0 2px 9px rgba(51, 51, 51, .18823529411764706);
+    justify-content: space-between;
+}
+
+
+
+.admin-user-options {
+    justify-content: space-between;
+    font-size: 20px;
+    display: flex;
+    margin: 20px;
+    margin-bottom:10px;
+}
+
+.admin-user-options .custom select {
+    margin-left: 15px;
+    height: 40px;
+    color: rgb(86, 86, 86);
+    border-color: rgb(86, 86, 86);
+    border-radius: 3px;
+}
+
+input {
+    height: 40px;
+    border-style: inset;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid rgb(86, 86, 86)
+}
+
+.admin-user-box {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 380px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 5px;
+    height: 80vh;
+    box-shadow: 0 2px 9px rgba(51, 51, 51, .18823529411764706);
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.create-user {
+    background-color: #4285f4;
+    color: #fff;
+    margin: 0 0.375rem;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 10px 25px;
+    box-shadow: -3px 3px 7px 0 rgba(0, 0, 0, 0.23);
+    border: none;
+    height: 50px;
+    width: 170px;
+    border-radius: 5px;
+}
+
+.admin-user-list-table {
+    width: 100%;
+    text-align: center;
+}
+
+.admin-user-list {
+    border-radius: 5px;
+}
+
+.add-module{
+    background-color: #4285f4;
+    color: #fff;
+    margin: 0 0.375rem;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 10px 25px;
+    box-shadow: -2px 2px 7px 0 rgba(0, 0, 0, 0.23);
+    border: none;
+    height: 45px;
+    width: 170px;
+    border-radius: 5px;
+}
+
+th {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 8px;
+    height: 40px;
+}
+
+td {
+    height: 55px;
+    font-size: 19px;
+}
+
+.even-row {
+    background-color: rgb(244, 244, 244);
+}
+
+.admin-user-list {
+    overflow: auto;
+    height: 70%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.pagination label{
+    /* width:100%; */
+    margin: 15px;
+    /* text-align: center; */
+    cursor: pointer;
+    /* margin-bottom: 0; */
+}
+
+.pagination{
+    /* border: 1px solid black; */
+    justify-content:center;
+    /* display:flex; */
+}

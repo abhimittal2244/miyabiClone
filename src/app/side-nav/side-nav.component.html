@@ -1,0 +1,21 @@
+<div class= "mainside">
+
+    <div class="side-nav-user">
+        <span class="profile">User: Admin</span>
+    </div>
+    <div class="side-nav-content">
+        <ul class="nav-list" >
+            <li *ngFor="let item of list">
+                <a routerLink="{{item.link}}">
+                    <li class="nav-list-item" (click)="changeDesign()">
+                        <i class={{item.icon}}></i>
+                        <span>
+                            {{item.name}}
+                        </span>
+                    </li>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- <router-outlet />   -->

@@ -1,0 +1,67 @@
+
+<div class="coupon-page-box">
+    <div class="select-coupon">
+        <label>Marathon:</label>
+        <select class="select-coupon-list">
+            <option>--SELECT Marathon--</option>
+            <option *ngFor="let user of list">{{user.name}}</option>
+        </select>
+    </div>
+
+    <div class="coupon-options">
+        <div class="custom">
+            <label>Show:</label>
+            <select id="pageSize">
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="400">400</option>
+                <option value="600">600</option>
+                <option value="1000">1000</option>
+            </select>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <input type="search" placeholder="Search">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="coupon-list">
+        <table class="coupon-list-table">
+            <tr>
+                <th>Sno<i class="fa fa-sort"></i></th>
+                <th>Email<i class="fa fa-sort"></i></th>
+                <th>Coupon<i class="fa fa-sort"></i></th>
+                <th>Created Date<i class="fa fa-sort"></i></th>
+                <th>Discount<i class="fa fa-sort"></i></th>
+                <th>Discount Type<i class="fa fa-sort"></i></th>
+                <th>Marathon Name<i class="fa fa-sort"></i></th>
+                <th>Order Number<i class="fa fa-sort"></i></th>
+                <th>Number Of Uses<i class="fa fa-sort"></i></th>
+                <th>Consumed Count<i class="fa fa-sort"></i></th>
+                <th>Valid<i class="fa fa-sort"></i></th>
+            </tr>    
+             <tr class="edit-coupon-list" *ngFor="let item of logs; let i = index" [ngClass]="{'even-row':i%2==0, 'odd-row':i%2!=0}">
+                <td>{{i+1}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.coupon}}</td>
+                <td>{{item.createdDate}}</td>
+                <td>{{item.discount}}</td>
+                <td>{{item.discountType}}</td>
+                <td>{{item.marathonName}}</td>
+                <td>{{item.orderNumber}}</td>
+                <td>{{item.numberOfUses}}</td>
+                <td>{{item.counsumedCount}}</td>
+                <td>{{item.valid}}</td>
+                <!-- {{increaseSno()}} -->
+             </tr>  
+        </table>
+    </div>
+    <div class="pagination">
+        <label> << Previous</label>
+        <label> 1 </label>
+        <label> Next >></label>
+    </div>
+</div>

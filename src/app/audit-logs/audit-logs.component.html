@@ -1,0 +1,56 @@
+<div class="audit-logs-box">
+    <div class="select-user">
+        <label>USER:</label>
+        <select class="select-user-list">
+            <option>--SELECT--</option>
+            <option *ngFor="let user of list">{{user.name}}</option>
+        </select>
+    </div>
+
+    <div class="audit-logs-options">
+        <div class="custom">
+            <label>Show:</label>
+            <select id="pageSize">
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="400">400</option>
+                <option value="600">600</option>
+                <option value="1000">1000</option>
+            </select>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <input type="search" placeholder="Search">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="admin-user-list">
+        <table class="admin-user-list-table">
+            <tr>
+                <th>Sno</th>
+                <th>IP Address</th>
+                <th>Table Name</th>
+                <th>Action</th>
+                <th>Created Date</th>
+                <th>Changes</th>
+             </tr>    
+             <tr class="admin-list" *ngFor="let item of logs; let i = index" [ngClass]="{'even-row':i%2==0, 'odd-row':i%2!=0}">
+                <td>{{i+1}}</td>
+                <td>{{item.ipAddress}}</td>
+                <td>{{item.tableName}}</td>
+                <td>{{item.action}}</td>
+                <td>{{item.createdDate}}</td>
+                <td>{{item.changes}}</td>
+                <!-- {{increaseSno()}} -->
+             </tr>  
+        </table>
+    </div>
+    <div class="pagination">
+        <label> << Previous</label>
+        <label> 1 </label>
+        <label> Next >></label>
+    </div>
+</div>

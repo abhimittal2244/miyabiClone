@@ -1,0 +1,27 @@
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img class="ico" src="../../assets/logo-details-sm.png">
+      <img class="written-ico" src="../../assets/newsvg.svg">
+    </a>
+    
+    <div class="dropdown dropstart">
+        <a class="btn btn-secondary btn-lg" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-bars mr-3"></i>
+        </a>
+       
+        <ul class="dropdown-menu">
+            <li class="dropdown-item1"  *ngFor="let item of list">
+                <a href="#">
+                    <li class="dropdown-item" (click)="changeDesign()">
+                        <i class={{item.icon}}></i>
+                        <span>
+                            {{item.name}}
+                        </span>
+                    </li>
+                </a>
+            </li>
+        </ul>  
+      </div>
+  </nav>
+
+
