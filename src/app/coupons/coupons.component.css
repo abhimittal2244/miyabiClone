@@ -67,6 +67,10 @@ th {
     height: 40px;
 }
 
+i{
+    margin-left: 10px;
+}
+
 td {
     height: 55px;
     font-size: 19px;

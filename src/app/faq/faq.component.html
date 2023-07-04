@@ -5,26 +5,27 @@
             <li>
                 <button class="create-feedback">CREATE FAQ</button>
             </li>
-            </ul>
-            </div>
+        </ul>
+    </div>
     <!-- <form action="#"> -->
-        <div class="feedback-page-options">
-            <div class="custom">
-                <label>Show:</label>
-                <select id="showfeedback">
-                    <option value="25">25</option>
-                    <option value="50">50</option>
-                    <option value="75">75</option>
-                    <option value="100">100</option>
-                </select>
-            </div><div>
-                <ul>
-                    <li>
-                        <input type="search" placeholder="Search">
-                    </li>
-                </ul>
-                    </div> 
-                   </div>
+    <div class="feedback-page-options">
+        <div class="custom">
+            <label>Show:</label>
+            <select id="showfeedback">
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="75">75</option>
+                <option value="100">100</option>
+            </select>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <input type="search" placeholder="Search">
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- </form> -->
     <div class="feedback-page-list">
         <table class="feedback-page-list-table">
@@ -34,19 +35,27 @@
                 <th>Answer</th>
                 <th>Tags</th>
                 <th>Action</th>
-             </tr>    
-             <tr class="feedback-list" *ngFor="let item of list; let i = index" [ngClass]="{'even-row':i%2==0, 'odd-row':i%2!=0}">
+            </tr>
+            <tr class="feedback-list" *ngFor="let item of list; let i = index"
+                [ngClass]="{'even-row':i%2==0, 'odd-row':i%2!=0}">
                 <td>{{i+1}}</td>
                 <td>{{item.question}}</td>
                 <td>{{item.answer}}</td>
                 <td>{{item.tags}}</td>
-                <td>{{item.action}}</td>
-             </tr>  
+                <td><label class="switch ng-star-inserted">
+                        <input id="togBtn" type="checkbox" class="ng-untouched ng-pristine ng-valid" [checked]="item.valid">
+                        <div class="slider round">
+                            <span class="on">INACTIVE</span>
+                        </div>
+                    </label>
+                </td>
+            </tr>
         </table>
     </div>
     <div class="pagination">
-        <label> << Previous</label>
-        <label> 1 </label>
-        <label> Next >></label>
+        <label>
+            << Previous</label>
+                <label> 1 </label>
+                <label> Next >></label>
     </div>
 </div>

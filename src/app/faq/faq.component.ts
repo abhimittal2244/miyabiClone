@@ -12,7 +12,7 @@ export class FaqComponent {
       question: "Java Enterprise Course good to start for beginners",
       answer: "yes",
       tags: "#java, #courses, #beginners",
-      action: "valid"
+      valid: false
     }
   ]
 }

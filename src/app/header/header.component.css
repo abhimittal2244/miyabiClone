@@ -32,7 +32,6 @@
  
 }
 
-
 .dropdown-item1{
     overflow: auto;
 }
@@ -66,10 +65,7 @@ span{
 }
 
 .dropdown:hover{
-    /* background-color: rgba(232, 232, 232, 0.591);
-    border-left-style:hidden; */
     border-radius: 15px;
-    /* visibility:visible; */
 }
 
 .dropdown{

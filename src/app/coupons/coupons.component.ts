@@ -32,7 +32,7 @@ export class CouponsComponent {
       orderNumber: "677880",
       numberOfUses: 20,
       counsumedCount: 13,
-      valid: true
+      valid: false
     }
   ]
 }

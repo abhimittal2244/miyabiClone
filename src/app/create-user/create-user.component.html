@@ -1,1 +1,77 @@
-<p>create-user works!</p>
+<div class="create-user-box">
+    <div class="create-user-header">
+        <h1>Create User</h1>
+    </div>
+    <div class="alignment">
+    <div class="create-user-table">
+        <form [formGroup]="createUserDTO" (ngSubmit)="createUser()">
+            <table>
+                <tr>
+                    <th>
+                        <label>Role:</label>
+                    </th>
+                    <td>
+                        <select id="role" formControlName="role">
+                            <option value="none">----SELECT----</option>
+                            <option value="user">User</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label>Language:</label></th>
+                    <td><select id="language" formControlName="language">
+                        <option value="none">----SELECT----</option>
+                        <option value="english">English</option>
+                            <option value="russian">Russian</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <th><label>First Name:</label></th>
+                    <td> <input type="text" placeholder="First Name" formControlName="firstName" /></td>
+                </tr>
+                <tr>
+                    <th><label>Last Name:</label></th>
+                    <td> <input type="text" placeholder="Last Name" formControlName="lastName" />
+                    </td>
+                </tr>
+                <tr>
+                    <th> <label>Email Address:</label>
+                    </th>
+                    <td> <input type="text" placeholder="Email Address" formControlName="email" />
+                    </td>
+                </tr>
+                <tr>
+                    <th> <label>Phone Number:</label>
+                    </th>
+                    <td> <input type="text" placeholder="Phone Number" formControlName="phone" />
+                    </td>
+                </tr>
+                <tr>
+                    <th> <label>Instagram Id:</label>
+                    </th>
+                    <td> <input type="text" placeholder="Instagram Id" formControlName="instagramId" />
+                    </td>
+                </tr>
+                <tr>
+                    <th> <label>Password:</label>
+                    </th>
+                    <td> <input type="password" placeholder="Password" formControlName="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <th> <label>Confirm Password:</label>
+                    </th>
+                    <td> <input type="password" placeholder="Confirm Password" formControlName="confirmPassword" />
+                    </td>
+                </tr>
+            </table>
+
+            <div class="controlButtons">
+                <button type="reset">Reset</button>
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>

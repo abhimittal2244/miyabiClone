@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./admin-user.component.css']
 })
 export class AdminUserComponent {
+  // abc:boolean=false;
+  // changeAbc(){
+  //   this.abc = !this.abc;
+  // }
   list = [
     {
       Sno: "1",
@@ -15,7 +19,6 @@ export class AdminUserComponent {
       email: "noname@gmail.com",
       action: "Add Module2"
     },
-
     {
       Sno: "1",
       role: "Admin",

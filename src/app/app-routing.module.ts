@@ -8,11 +8,16 @@ import { FaqComponent } from './faq/faq.component';
 import { ManageMarathonComponent } from './manage-marathon/manage-marathon.component';
 import { ManageUsersComponent } from './manage-users/manage-users.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { CreateUserComponent } from './create-user/create-user.component';
 
 const routes: Routes = [
   {
     path:'admin-user',
     component: AdminUserComponent
+  },
+  {
+    path:'create-user',
+    component: CreateUserComponent
   },
   {
     path: 'audit-logs',

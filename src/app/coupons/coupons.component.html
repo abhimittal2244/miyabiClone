@@ -54,13 +54,18 @@
                 <td>{{item.orderNumber}}</td>
                 <td>{{item.numberOfUses}}</td>
                 <td>{{item.counsumedCount}}</td>
-                <td>{{item.valid}}</td>
+                <td><label class="switch ng-star-inserted">
+                    <input id="togBtn" type="checkbox" class="ng-untouched ng-pristine ng-valid" [checked]="item.valid">
+                    <div class="slider round">
+                        <span class="on">INACTIVE</span>
+                    </div>
+                </label></td>
                 <!-- {{increaseSno()}} -->
              </tr>  
         </table>
     </div>
     <div class="pagination">
-        <label> << Previous</label>
+        <label><< Previous</label>
         <label> 1 </label>
         <label> Next >></label>
     </div>
