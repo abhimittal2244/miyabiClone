@@ -9,6 +9,9 @@ import { ManageMarathonComponent } from './manage-marathon/manage-marathon.compo
 import { ManageUsersComponent } from './manage-users/manage-users.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { AppSettingComponent } from './app-setting/app-setting.component';
+import { CreateCourseComponent } from './create-course/create-course.component';
+import { CreateCouponComponent } from './create-coupon/create-coupon.component';
 
 const routes: Routes = [
   {
@@ -16,8 +19,20 @@ const routes: Routes = [
     component: AdminUserComponent
   },
   {
+    path: 'create-course',
+    component: CreateCourseComponent
+  },
+  {
+    path: 'app-setting',
+    component: AppSettingComponent
+  },
+  {
     path:'create-user',
     component: CreateUserComponent
+  },
+  {
+    path:'create-coupon',
+    component: CreateCouponComponent
   },
   {
     path: 'audit-logs',

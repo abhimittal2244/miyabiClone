@@ -69,6 +69,7 @@ td{
 select{
     width: 100%;
     font-size: larger;
+    /* color: rgb(86, 86, 86); */
 }
 
 option{

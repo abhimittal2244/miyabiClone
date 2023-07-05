@@ -1,0 +1,85 @@
+<div class="create-course-box">
+    <div class="create-course-header">
+        <h1>Create Course</h1>
+    </div>
+    <div class="alignment">
+        <div class="create-course-table">
+            <form [formGroup]="createcourseDTO" (ngSubmit)="createcourse()">
+                <table>
+                    <tr>
+                        <th>
+                            <label>Select Marathon:</label>
+                        </th>
+                        <td>
+                            <select id="selectMarathon" formControlName="selectMarathon">
+                                <option value="none" [defaultSelected]="true">----SELECT----</option>
+                                <option value="1">Marathon 1</option>
+                                <option value="2">Marathon 2</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label>Course Type:</label></th>
+                        <td><select id="courseType" formControlName="courseType">
+                                <option value="none" [defaultSelected]="true">----SELECT----</option>
+                                <option value="1">Type 1</option>
+                                <option value="2">Type 2</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th><label>Marathon Level:</label></th>
+                        <td><select id="marathonLevel" formControlName="marathonLevel">
+                                <option value="none" [defaultSelected]="true">----SELECT----</option>
+                                <option value="1">Level 1</option>
+                                <option value="2">Level 2</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <th><label>Title:</label></th>
+                        <td> <input type="text" placeholder="Title" formControlName="title" /></td>
+                    </tr>
+                    <tr>
+                        <th><label>Sub Title:</label></th>
+                        <td> <input type="text" placeholder="Sub Title" formControlName="subTitle" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th> <label>Cost:</label>
+                        </th>
+                        <td> <input type="number" placeholder="Amount" formControlName="cost" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th> <label>Start Date:</label>
+                        </th>
+                        <td> <input type="date" placeholder="Date" formControlName="date" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th> <label>Description:</label>
+                        </th>
+                        <td> <input type="text" placeholder="Description" formControlName="description" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th> <label>Plan Id:</label>
+                        </th>
+                        <td> <input type="text" placeholder="Id" formControlName="planId" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th> <label>Image:</label>
+                        </th>
+                        <td> <input type="text" placeholder="Choose An Image" formControlName="image" />
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="controlButtons">
+                    <button type="reset">Reset</button>
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

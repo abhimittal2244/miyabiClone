@@ -12,7 +12,7 @@
                     </th>
                     <td>
                         <select id="role" formControlName="role">
-                            <option value="none">----SELECT----</option>
+                            <option value="none" [defaultSelected]="true">----SELECT----</option>
                             <option value="user">User</option>
                             <option value="admin">Admin</option>
                         </select>
@@ -20,8 +20,8 @@
                 </tr>
                 <tr>
                     <th><label>Language:</label></th>
-                    <td><select id="language" formControlName="language">
-                        <option value="none">----SELECT----</option>
+                    <td><select formControlName="language" required>
+                        <option value="none" [defaultSelected]="true" >----SELECT----</option>
                         <option value="english">English</option>
                             <option value="russian">Russian</option>
                         </select></td>

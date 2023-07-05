@@ -17,7 +17,7 @@ export class SideNavComponent {
     {
       name: "App Settings",
       icon: "fa fa-map mr-3",
-      link: "admin-user"
+      link: "app-setting"
     },
     {
       name: "Audit Logs",

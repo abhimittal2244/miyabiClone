@@ -2,29 +2,31 @@
     <div class="course-page-header">
         <h1>Course List</h1>
         <ul>
-            <li>
-                <button class="create-course">CREATE COURSE</button>
+            <li><a routerLink="/create-course">
+                    <button class="create-course">CREATE COURSE</button>
+                </a> 
             </li>
-            </ul>
-            </div>
+        </ul>
+    </div>
     <!-- <form action="#"> -->
-        <div class="course-page-options">
-            <div class="custom">
-                <label>Show:</label>
-                <select id="showCoupon">
-                    <option value="25">25</option>
-                    <option value="50">50</option>
-                    <option value="75">75</option>
-                    <option value="100">100</option>
-                </select>
-            </div><div>
-                <ul>
-                    <li>
-                        <input type="search" placeholder="Search">
-                    </li>
-                </ul>
-                    </div> 
-                   </div>
+    <div class="course-page-options">
+        <div class="custom">
+            <label>Show:</label>
+            <select id="showCoupon">
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="75">75</option>
+                <option value="100">100</option>
+            </select>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <input type="search" placeholder="Search">
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- </form> -->
     <div class="course-page-list">
         <table class="course-page-list-table">
@@ -37,8 +39,9 @@
                 <th>Start Date</th>
                 <th>Copy Marathon URL</th>
                 <th>Copy Gift URL</th>
-             </tr>    
-             <tr class="course-list" *ngFor="let item of list; let i = index" [ngClass]="{'even-row':i%2==0, 'odd-row':i%2!=0}">
+            </tr>
+            <tr class="course-list" *ngFor="let item of list; let i = index"
+                [ngClass]="{'even-row':i%2==0, 'odd-row':i%2!=0}">
                 <td>{{i+1}}</td>
                 <td>{{item.courseName}}</td>
                 <td>{{item.courseSubTitle}}</td>
@@ -47,13 +50,14 @@
                 <td>{{item.startDate}}</td>
                 <td>{{item.marathonUrl}}</td>
                 <td>{{item.giftUrl}}</td>
-                
-             </tr>  
+
+            </tr>
         </table>
     </div>
     <div class="pagination">
-        <label> << Previous</label>
-        <label> 1 </label>
-        <label> Next >></label>
+        <label>
+            << Previous</label>
+                <label> 1 </label>
+                <label> Next >></label>
     </div>
 </div>

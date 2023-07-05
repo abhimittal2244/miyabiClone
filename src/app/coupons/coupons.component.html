@@ -1,11 +1,20 @@
 
 <div class="coupon-page-box">
     <div class="select-coupon">
+        <div>
         <label>Marathon:</label>
         <select class="select-coupon-list">
             <option>--SELECT Marathon--</option>
             <option *ngFor="let user of list">{{user.name}}</option>
         </select>
+    </div>
+        <ul>
+            <li>
+                <a routerLink="/create-coupon">
+                    <button class="create-coupon">CREATE COUPON</button>
+                </a>
+            </li>
+        </ul>
     </div>
 
     <div class="coupon-options">

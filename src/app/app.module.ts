@@ -17,6 +17,9 @@ import { FaqComponent } from './faq/faq.component';
 import { ManageMarathonComponent } from './manage-marathon/manage-marathon.component';
 import { ManageUsersComponent } from './manage-users/manage-users.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { AppSettingComponent } from './app-setting/app-setting.component';
+import { CreateCourseComponent } from './create-course/create-course.component';
+import { CreateCouponComponent } from './create-coupon/create-coupon.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { CreateUserComponent } from './create-user/create-user.component';
     FaqComponent,
     ManageMarathonComponent,
     ManageUsersComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    AppSettingComponent,
+    CreateCourseComponent,
+    CreateCouponComponent
   ],
   imports: [
     BrowserModule,
