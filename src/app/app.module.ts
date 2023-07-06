@@ -4,7 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './header/header.component';
@@ -20,7 +20,6 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { AppSettingComponent } from './app-setting/app-setting.component';
 import { CreateCourseComponent } from './create-course/create-course.component';
 import { CreateCouponComponent } from './create-coupon/create-coupon.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +42,6 @@ import { CreateCouponComponent } from './create-coupon/create-coupon.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
     ReactiveFormsModule
   ],
   providers: [],

@@ -47,7 +47,7 @@ export class SideNavComponent {
     {
       name: "Create Coupons",
       icon: "fas fa-gift mr-3",
-      link: "admin-user"
+      link: "create-coupon"
     },
     {
       name: "Dashboard",

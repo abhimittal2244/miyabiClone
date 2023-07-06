@@ -2,93 +2,84 @@
     <div class="create-coupon-header">
         <h1>Create Coupon</h1>
     </div>
-
-    <div class="create-coupon-body">
-        <form>
-        <fieldset>
-            <legend>Choose your favorite monster</legend>
-        
-            <input type="radio" id="kraken" name="monster" value="K">
-            <label for="kraken">Kraken</label><br>
-        
-            <input type="radio" id="sasquatch" name="monster" value="S">
-            <label for="sasquatch">Sasquatch</label><br>
-        
-            <input type="radio" id="mothman" name="monster" value="M">
-            <label for="mothman">Mothman</label>
-          </fieldset>
-          </form>
-        <!-- <form> -->
-            <!-- <fieldset class="fieldset">
-                <legend> Mandatory fields</legend>
-                <div>
-                    <label for="discount">Discount type:
-                        <span style="color:red">
-                            *
-                        </span>
-                    </label>
-                    <select name="discount" required="">
-                        <option selected="" value="null">--Select discount type--</option>
-                        <option value="Amount"> Amount</option>
-                        <option value="Percentage"> Percentage</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="discountnumber">
-                        Discount: 
-                        <span style="color:red">
-                            *
-                        </span>
-                    </label>
-                    <input
-                        max="100" min="0"
-                        name="discountnumber" oninput="validity.valid||(value='');" required="" step="1" type="number"
-                        disabled="">
-                </div>
-                <div>
-                    <label for="numberuser">
-                        Number of user: 
-                        <span style="color:red">
-                            *
-                        </span>
-                    </label>
-                    <input class="form-control ng-untouched ng-pristine ng-valid" id="numberuser" name="numberuser"
-                        required="" type="number">
-                </div>
-            </fieldset> -->
-            <!-- <fieldset class="fieldset">
-                <legend><i aria-hidden="true" class="fa fa-chevron-up"></i> Optional fields:</legend>
-                
-                <div>
-                    <div class="form-group"><label for="coupan">Coupon Code:
-                            <span style="color: #59da55"><i>eg.
-                                    CHRISTMAS2000,DEV3976,29MIYSBI29</i></span></label><input
-                            class="form-control ng-untouched ng-pristine ng-valid" id="coupon" maxlength="20"
-                            name="coupon" pattern="^[a-zA-Z0-9]+$" type="text"></div>
-
-                    <div class="form-row">
-                        <div class="form-group col-md-6 mb-6"><label for="startdate">Start date:</label><input
-                                class="form-control ng-untouched ng-pristine ng-valid" id="startdate" name="startdate"
-                                type="date"></div>
-                        <div class="form-group col-md-6 mb-6"><label for="endtdate">End date:</label><input
-                                class="form-control ng-untouched ng-pristine ng-valid" id="endtdate" name="endtdate"
-                                type="date"></div>
-                    </div>
-                    <div class="form-group"><label for="marathon">Marathon
-                            :</label><select>
-                            <option> Copy of ЭСТЕТИКА ()</option>
-                        </select></div>
-                </div>
-            </fieldset><br><button class="btn btn-lg btn-primary btn-block" type="submit"
-                disabled="">Submit</button> -->
-            <!-- <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
+    <div style="display:flex; justify-content: center;">
+        <div class="create-coupon-body">
+            <div class="set-values">
+                <label class="heading">Mendatory Fields</label>
             </div>
-        </form> -->
+            <div style=" margin: 2%">
+                <div class="element-style">
+                    <label style="font-weight: 500; font-size: 130%;">Discount Type:<span style="color: red;">*</span></label>
+                    <div>
+                        <select class="user-input">
+                            <option>--SELECT--</option>
+                            <option>Full Discount</option>
+                            <option>Seperate Discount</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="element-style">
+                    <label>Discount:<span style="color: red;">*</span></label>
+                    <div>
+                        <input class="user-input" type="number" placeholder="Enter Discount Value">
+                    </div>
+                </div>
+                <div class="element-style">
+                    <label>Number Of Uses:<span style="color: red;">*</span></label>
+                    <div>
+                        <input class="user-input" type="number">
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <i (click)="isHidden()" [class]="flag?'fa-solid fa-chevron-up':'fa-solid fa-chevron-down'" style="font-size: x-large; margin-right: 1%; cursor: pointer;"></i>
+                <label (click)="isHidden()" style="font-size: xx-large;cursor: pointer;">Optional Fields</label>
+            </div>
+            <div class="optional-values" [hidden]="flag">
+                <div class="common-params">
+                    <label>Coupon Code:</label>
+                    <div>
+                        <input class="user-input" type="text">
+                    </div>
+                </div>
+                <div class="common-params">
+                    <label>Description:</label>
+                    <div id = edit>
+                    </div>
+                </div>
+                <div class="common-params" style="display: flex; justify-content: space-between;">
+                    <div style="width: 50%;">
+                        <label>Start Date:</label>
+                        <div>
+                            <input class="user-input1" type="date">
+                        </div>
+                    </div>
+                    <div style="width: 50%; margin-left: 3%;">
+                        <label>End Date:</label>
+                        <div>
+                            <input class="user-input1" type="date">
+                        </div>
+                    </div>
+                </div>
+                <div class="common-params">
+                    <label style="font-weight: 500; font-size: 130%;">Discount Type:</label>
+                    <div>
+                        <select class="user-input">
+                            <option>--SELECT--</option>
+                            <option>Full Discount</option>
+                            <option>Seperate Discount</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+        
     </div>
 </div>
-
+<app-coupons />
 
 
 <!-- <div id = edit class="try">

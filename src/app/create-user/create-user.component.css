@@ -30,6 +30,7 @@
     justify-content: center;
     /* padding-left: 30%; */
     border: 5px solid #5e97f2;
+    border-radius: 10px;
 }
 
 .controlButtons{

@@ -4,7 +4,11 @@
     margin-right: 20px;
     border-radius: 10px;
     /* padding: 1%; */
-    border: 1px solid black
+    /* border: 1px solid black; */
+    display: flex;
+    flex-flow: column;
+    box-shadow: 0 2px 9px rgba(51, 51, 51, .18823529411764706);
+    background-color: #fff;
 }
 
 .create-coupon-header{
@@ -14,6 +18,82 @@
     border-radius: 10px;
     color: #fff;
 }
+
+.create-coupon-body{
+    border: 3px solid #5e97f2;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width:50%;
+}
+
+.element-style{
+    margin-bottom: 2%;
+}
+
+.element-style .user-input{
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 100%;
+    border:1px solid black;
+}
+
+.element-style label{
+    font-weight: 500;
+    font-size: 130%;
+}
+.set-values{
+
+    /* border: 1px solid black;  */
+    /* width: 50%;  */
+    display: flex;
+    justify-content: center; 
+}
+
+.heading{
+    /* border: 1px solid black;  */
+    text-align: center;
+    /* flex-flow:column;  */
+    font-size: 250%;
+}
+
+.optional-values .common-params{
+    margin: 2%;
+}
+
+.common-params .user-input{
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 100%;
+    border:1px solid black;
+}
+
+.common-params .user-input1{
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 100%;
+    border:1px solid black;
+}
+h3{
+    cursor: pointer;
+}
+/* thead{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: 1px solid black;
+    background-color: #5e97f2;
+    color: #fff;
+    
+} */
+
+
 
 /* .fieldset{
     display: block;
