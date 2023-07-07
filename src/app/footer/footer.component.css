@@ -1,7 +1,7 @@
 .footer{
     margin-left: 360px;
     background-color:rgb(68, 127, 235);
-    /* position: fixed; */
+    /* position: absolute; */
     height:84px;
     color: #fff;
     text-align: center;

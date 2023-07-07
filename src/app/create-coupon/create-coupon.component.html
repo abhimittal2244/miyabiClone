@@ -2,6 +2,7 @@
     <div class="create-coupon-header">
         <h1>Create Coupon</h1>
     </div>
+    <form>
     <div style="display:flex; justify-content: center;">
         <div class="create-coupon-body">
             <div class="set-values">
@@ -31,7 +32,7 @@
                     </div>
                 </div>
             </div>
-            <div style="text-align: center;">
+            <div style="text-align: center; user-select: none;">
                 <i (click)="isHidden()" [class]="flag?'fa-solid fa-chevron-up':'fa-solid fa-chevron-down'" style="font-size: x-large; margin-right: 1%; cursor: pointer;"></i>
                 <label (click)="isHidden()" style="font-size: xx-large;cursor: pointer;">Optional Fields</label>
             </div>
@@ -62,22 +63,28 @@
                     </div>
                 </div>
                 <div class="common-params">
-                    <label style="font-weight: 500; font-size: 130%;">Discount Type:</label>
+                    <label style="font-weight: 500; font-size: 130%;">Marathon:</label>
                     <div>
                         <select class="user-input">
                             <option>--SELECT--</option>
-                            <option>Full Discount</option>
-                            <option>Seperate Discount</option>
+                            <option>Marathon 1</option>
+                            <option>Marathon 2</option>
                         </select>
                     </div>
                 </div>
 
+            </div>
+
+            <div class="functional-button">
+                <button type="reset" class="control-button">Reset</button>
+                <button class="control-button">Submit</button>
             </div>
         </div>
 
         
         
     </div>
+</form>
 </div>
 <app-coupons />
 

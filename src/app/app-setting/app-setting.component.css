@@ -1,0 +1,45 @@
+.app-setting-box{
+    /* overflow: auto; */
+    display: flex;
+    flex-flow: column;
+    /* flex-wrap: wrap; */
+    margin-top: 20px;
+    margin-left: 380px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 5px;
+    /* height: auto; */
+    /* height: 80vh; */
+    box-shadow: 0 2px 9px rgba(51, 51, 51, .18823529411764706);
+    padding: 0;
+    /* border: 1px solid black */
+}
+
+.app-setting-main{
+    /* height: auto; */
+    margin-top:2%;
+    margin-left:2%;
+    margin-right:2%;
+    /* border: 1px solid black */
+}
+
+.app-setting-terms{
+    /* height: auto; */
+    margin-left:2%;
+    margin-right:2%;
+    /* border: 1px solid black */
+}
+
+.settings{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    margin-bottom: 1.5%;
+    font-size: 130%;
+}
+
+.settings input{
+    border-radius: 5px;
+    border: 1px solid black
+}

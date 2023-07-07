@@ -131,3 +131,23 @@ legend{
     border: 1px solid black;
     margin: 10px;
 } */
+
+.functional-button{
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+}
+
+.control-button {
+    background-color: #4285f4;
+    color: #fff;
+    margin: 0 0.9rem;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 0;
+    box-shadow: -3px 3px 7px 0 rgba(0, 0, 0, 0.23);
+    border: none;
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+}

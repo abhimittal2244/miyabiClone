@@ -14,8 +14,17 @@ export class CreateCouponComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     // @ts-ignore
     new FroalaEditor("#edit", {
-      height: 200,
+      heightMin:auto,
+      heightMax:600,
       width: auto
   })
 }
+// @ts-ignore
+// editor = new FroalaEditor('.selector', {}, function () {
+
+//   // Call the method inside the initialized event.
+  
+//   editor.format.remove('strong', { class: 'foo' });
+  
+//   })
 }
