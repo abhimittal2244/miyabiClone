@@ -1,16 +1,17 @@
-<div class="container-fluid g-0">
+<div *ngIf="login"
+  style="display:flex; flex-direction: row; margin: 0; width:100%; height: fit-content; ">
   <app-side-nav />
-</div>
 
-<div class="box1">
-  <app-header />
-  <!-- <app-admin-user /> -->
-  <!-- <app-audit-logs /> -->
-  <!-- <app-coupons /> -->
-  <!-- <app-course /> -->
-  <!-- <app-faq /> -->
-  <!-- <app-manage-marathon /> -->
-  <!-- <app-manage-users /> -->
-  <router-outlet></router-outlet>
-  <app-footer />
+  <div class="box1">
+    <app-header />
+
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+
+    <app-footer />
+  </div>
+</div>
+<div *ngIf="!login">
+  <app-login />
 </div>

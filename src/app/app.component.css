@@ -1,12 +1,7 @@
-app-side-nav{
-    display: flex;
-}
-
-.container_fluid{
-    display: flex;
-}
-
 .box1{
-    display: flex;
-    flex-flow:column;
+    right: 0;
+    margin-left: 14%;
+    /* border: 5px solid green; */
+    width: 86%;
+    min-height: 100vh;
 }

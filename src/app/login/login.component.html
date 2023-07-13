@@ -1,0 +1,41 @@
+<div class="login-body martahon-bg">
+    <!-- <div>
+        <div class="logo-detail">
+            <img src="../../../assets/img/logo-details-sm.svg">
+        </div>
+    </div> -->
+    <form [formGroup]="account" (ngSubmit)="send()">
+        <div style="text-align: center;">
+            <div class="login-block">
+                <ul class=" nav nav-tabs">
+                    <div class="nav-item">
+                        <p style="border-top-left-radius: 14px;"
+                            class="head active">ENTRANCE</p>
+                    </div>
+                </ul>
+                <div class="form">
+                    <p *ngIf="message"
+                        class="alert alert-danger">
+                        {{message}}</p>
+                    <input class="form-control" formControlName="email" required
+                        type="email" placeholder="Enter email">
+                    <div
+                        *ngIf="emailValid && emailValid.invalid && emailValid.touched"
+                        class="alert alert-danger">
+                        Please enter the correct email address</div>
+                    <input class="form-control" formControlName="password"
+                        required type="password"
+                        placeholder="Enter Password">
+                    <div
+                        *ngIf="passwordValid && passwordValid.invalid && passwordValid.touched"
+                        class="alert alert-danger">Enter your password</div>
+                </div>
+                <button [disabled]="account.invalid" class="btn btn-login">ENTRANCE</button>
+            </div>
+        </div>
+    </form>
+</div>
+<app-loading  *ngIf="loading" />
+<!-- <div *ngIf="loading" class="buffering">
+    <div class="spinner"></div>
+</div> -->

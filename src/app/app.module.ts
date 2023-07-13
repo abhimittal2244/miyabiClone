@@ -20,6 +20,9 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { AppSettingComponent } from './app-setting/app-setting.component';
 import { CreateCourseComponent } from './create-course/create-course.component';
 import { CreateCouponComponent } from './create-coupon/create-coupon.component';
+import { LoginComponent } from './login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -39,11 +42,14 @@ import { CreateCouponComponent } from './create-coupon/create-coupon.component';
     AppSettingComponent,
     CreateCourseComponent,
     CreateCouponComponent,
+    LoginComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

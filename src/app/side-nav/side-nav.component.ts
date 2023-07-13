@@ -152,7 +152,7 @@ export class SideNavComponent {
     {
       name: "Log Out",
       icon: "fa fa-sign-out mr-3",
-      link: "admin-user"
+      link: ""
     }
   ]
 

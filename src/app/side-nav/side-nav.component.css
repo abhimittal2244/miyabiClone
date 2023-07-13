@@ -1,46 +1,47 @@
 .side-nav-content{
     /* color: black; */
-    width: 300px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
+    padding-left: 7%;
+    padding-right: 7%;
+    /* margin-top: 20px; */
     cursor: pointer;
 }
 
 .nav-list{
     list-style: none;
     height: 100%;
-    padding: 0%;
-    margin-bottom: 0%;
+    padding: 0;
+    margin-bottom: 0;
+    /* width: 16%; */
 }
 
 .nav-list-item{
     
     display: flex;
     align-items: center;
-    height: 50px;
-    margin-top: 10px;
+    height: 5vh;
+    margin-bottom: 5%;
     border-top: 1px solid rgba(86, 86, 86, 0.591);
     
 }
 
 .side-nav-user{
-    padding-left: 70px;
-    padding-right: 20px;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    /* padding-left: 10%; */
+    /* padding-right: 1.5%; */
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
     font-size: 20px;
     cursor: pointer;
 }
 
 .nav-list-item i{
     font-size: 20px;
-    height: 25px;
-    width: 25px;
-    margin-left: 19px;
-    margin-right: 15px;
+    /* height: 5vh; */
+    /* width: 25px; */
+    margin-left: 6%;
+    margin-right: 6%;
     text-align: center;
-    line-height: 25px;
+    /* line-height: 200px; */
 }
 
 .nav-list-item:hover{
@@ -53,7 +54,7 @@
 } */
 
 .nav-list-item span{
-    width: 170px;
+    /* width: 170px; */
     font-size: 20px;
 }
 
@@ -63,13 +64,19 @@ a{
 }
 
 .mainside{
-    left: 0rem;
-    /* width: 355px; */
+    /* left: 0rem; */
+    width: 100%;
     height: 100vh;
     box-shadow: 0px 0px 03px;
     /* display: flex; */
-
-    height: 100%;
+    /* border: 5px solid black; */
+    /* height: 100%; */
     overflow: auto;
-    position: fixed;
+    /* position: fixed; */
+
+    position: fixed!important; 
+    width: 14%;
+    height: 100vh;
+    /* border: 5px solid blue; */
+    order: 1;
 }

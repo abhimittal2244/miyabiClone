@@ -1,15 +1,16 @@
 .footer{
-    margin-left: 360px;
+    /* margin-left: 1%; */
     background-color:rgb(68, 127, 235);
     /* position: absolute; */
-    height:84px;
+    bottom: 0;
+    height:5vh;
     color: #fff;
     text-align: center;
     /* align-items: center; */
 }
 .footer label{
     /* justify-content: center; */
-    padding:30px;
+    /* padding:30px; */
     font-style: italic;
     
 }

@@ -12,6 +12,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { AppSettingComponent } from './app-setting/app-setting.component';
 import { CreateCourseComponent } from './create-course/create-course.component';
 import { CreateCouponComponent } from './create-coupon/create-coupon.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -64,7 +65,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    component: AdminUserComponent
+    component: LoginComponent
   }
 ];
 

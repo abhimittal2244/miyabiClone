@@ -1,0 +1,176 @@
+.login-body {
+    overflow-x: hidden;
+    font-family: MyriadPro-Regular;
+    position: relative;
+    background-image: url('./../../assets/img/mma-background.997b37764200bd67d1ec.png');
+    background-position: 50%;
+    background-size: cover;
+    min-height: 100vh
+}
+
+/* @media screen and (max-width: 500px) {
+    .login-body {   
+        background-image: url('./../../../assets/img/mma-background-375.28fbf1c3d85f9e7d7a6a.png');
+        background-size: 100% 100%
+    }
+
+    .logo-detail {
+        margin-top: 30px
+    }
+} */
+
+.logo-detail {
+    text-align: right;
+    padding: 0;
+    max-width: 350px;
+    width: calc(100vw - 30px);
+    margin: 30px auto 0
+}
+
+.login-section .nav {
+    min-height: 53px
+}
+
+.login-block {
+    background-color: #f7f7f7;
+    padding: 0 0 17px;
+    border-radius: 14px;
+    max-width: 350px;
+    width: calc(100vw - 30px);
+    margin: 5vh auto 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .1607843137)
+}
+
+.nav {
+    padding: 0;
+    border-bottom: 0;
+    margin-bottom: 15px
+}
+
+@media screen and (max-width: 1400px) {
+    .nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        border-bottom: 0
+    }
+}
+
+.head,
+.head:hover,
+.nav-tabs .nav-item {
+    margin-bottom: 0 !important
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+    width: 50%;
+    text-align: center;
+    height: 100%
+}
+
+.head.active,
+.head.active:hover {
+    font-size: 25.9px;
+    line-height: 31.08px;
+    color: #e567ac;
+    background-color: transparent;
+    padding: 11px 5px
+}
+
+@media screen and (max-width: 360px) {
+
+    .head,
+    .head:hover {
+        font-size: 6vw
+    }
+
+    .head.active,
+    .head.active:hover {
+        font-size: 6.2vw
+    }
+
+    .btn-login {
+        padding: 18px 30px
+    }
+}
+
+.form {
+    padding: 0 30px
+}
+
+.form-control {
+    height: 50px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #717171;
+    border: 1px solid #70d1cc;
+    border-radius: 80px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 300px;
+    padding: 20px 10px;
+    max-width: 100%
+}
+
+.form-control::-moz-placeholder {
+    text-align: center
+}
+
+.form-control:-ms-input-placeholder {
+    text-align: center
+}
+
+.form-control::placeholder {
+    text-align: center
+}
+
+.btn-login {
+    background-image: linear-gradient(#70d1cc, #007e9e);
+    padding: 18px 30px;
+    font-size: 37.4px;
+    box-shadow: none;
+    line-height: 44.88px;
+    border-radius: 60px;
+    border: 0;
+    display: block;
+    margin: 0 auto;
+    min-width: 283px;
+    font-family: MyriadPro-BoldCond;
+    color: #fff !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto
+}
+
+/* .buffering {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top:0;
+    background-color: rgba(128, 128, 128, 0.537);
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+} */

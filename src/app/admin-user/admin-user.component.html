@@ -1,5 +1,6 @@
 <!-- <router-outlet /> -->
 <div class="admin-user-box" >
+    <div>
     <div class="admin-user-header">
         <h1>Admin User List</h1>
         <ul>
@@ -40,14 +41,14 @@
                 <th>Email</th>
                 <th>Action</th>
             </tr>
-            <tr class="admin-list" *ngFor="let item of list; let i = index"
+            <tr class="admin-list" *ngFor="let item of list1; let i = index"
                 [ngClass]="{'even-row':i%2==0, 'odd-row':i%2!=0}">
                 <td>{{i+1}}</td>
                 <td>{{item.role}}</td>
                 <td>{{item.language}}</td>
-                <td>{{item.name}}</td>
+                <td>{{item.firstName}} {{item.lastName}}</td>
                 <td>{{item.email}}</td>
-                <td><button class="add-module">{{item.action}}</button></td>
+                <td><button class="add-module">Add Module</button></td>
                 <!-- {{increaseSno()}} -->
             </tr>
         </table>
@@ -58,4 +59,6 @@
                 <label> 1 </label>
                 <label> Next >></label>
     </div>
+    <app-loading  *ngIf="loading" />
+</div>
 </div>

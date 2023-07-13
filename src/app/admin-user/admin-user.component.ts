@@ -1,4 +1,15 @@
 import { Component } from '@angular/core';
+import { MiyabiServicesService } from '../Services/miyabi-services.service';
+interface AdminUserList{
+  role: string;
+  language: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  instagramId: string;
+  isActive: boolean;
+};
 
 @Component({
   selector: 'app-admin-user',
@@ -6,10 +17,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./admin-user.component.css']
 })
 export class AdminUserComponent {
-  // abc:boolean=false;
-  // changeAbc(){
-  //   this.abc = !this.abc;
-  // }
+  public loading = true;
+  private _miyabiService: MiyabiServicesService;
+  list1:AdminUserList[]=[];
+  constructor(private miyabiService: MiyabiServicesService){
+    this._miyabiService = miyabiService;
+      this._miyabiService.getAdmins().subscribe((response)=>{
+        console.log(response);
+        this.list1 = response as AdminUserList[];
+      })
+  }
+
+
   list = [
     {
       Sno: "1",

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light bg-light">
+<!-- <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" routerLink="admin-user">
       <img class="ico" src="../../assets/logo-details-sm.png">
       <img class="written-ico" src="../../assets/newsvg.svg">
@@ -21,6 +21,31 @@
             </li>
         </ul>  
       </div>
-  </nav>
-
+  </nav> -->
+<div style="display: flex; justify-content: space-between; height: 5vh;">
+    <div style="display: flex; flex-direction: row">
+    <a routerLink="admin-user" style="display: flex;">
+        <img style=" height:100%; order:1" class="ico" src="../../assets/logo-details-sm.png">
+        <img style="order:2" class="written-ico" src="../../assets/newsvg.svg">
+      </a>
+      </div>
+      <div  style="height: 100%; margin-right: 0.5%;" class="dropdown dropstart">
+        <a class="menu btn btn-secondary btn-lg" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-bars mr-3" ></i>
+        </a>
+       
+        <ul class="dropdown-menu">
+            <li class="dropdown-item1"  *ngFor="let item of list">
+                <a href="#">
+                    <li class="dropdown-item" (click)="changeDesign()">
+                        <i class={{item.icon}}></i>
+                        <span>
+                            {{item.name}}
+                        </span>
+                    </li>
+                </a>
+            </li>
+        </ul>  
+      </div>
+</div>
 
