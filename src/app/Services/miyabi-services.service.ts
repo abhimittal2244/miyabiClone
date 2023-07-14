@@ -17,7 +17,15 @@ export class MiyabiServicesService {
   }
 
   createUser(data:any){
-    return this._http.post(this.baseUrl+"/api/RegisterLogin", data, { responseType: 'text' })
+    return this._http.post(this.baseUrl+"/api/RegisterLogin", data)
+  }
+
+  getUsers(){
+    return this._http.get(this.baseUrl+"/api/RegisterLogin/GetAllUsers")
+  }
+
+  activeDeactiveUser(id:string, isActive:boolean){
+    return this._http.put(this.baseUrl+"/api/RegisterLogin/ValidateUser?id="+id+"&isActive="+isActive,{});
   }
 
 }

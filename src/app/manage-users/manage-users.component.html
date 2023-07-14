@@ -38,20 +38,20 @@
                 <th>Login As User<i class="fa fa-sort"></i></th>
                 <th>Action<i class="fa fa-sort"></i></th>
              </tr>    
-             <tr class="marathon-list" *ngFor="let item of list; let i = index" [ngClass]="{'even-row':i%2==0, 'odd-row':i%2!=0}">
+             <tr class="marathon-list" *ngFor="let item of list1; let i = index" [ngClass]="{'even-row':i%2==0, 'odd-row':i%2!=0}">
                 <td>{{i+1}}</td>
-                <td>{{item.username}}</td>
+                <td>{{item.firstName}} {{item.lastName}}</td>
                 <td>{{item.email}}</td>
-                <td>{{item.instaId}}</td>
-                <td>{{item.phoneNumber}}</td>
+                <td>{{item.instagramId}}</td>
+                <td>{{item.phone}}</td>
                 <td><i class="fas fa-envelope-open-text notify"></i></td>
                 <td><i class="fa fa-sign-in"></i></td>
                 <td>
                     <label class="switch ng-star-inserted">
-                        <input id="togBtn" type="checkbox" class="ng-untouched ng-pristine ng-valid">
-                        <div class="slider round">
+                        <input id="togBtn" type="checkbox" #abc [checked]="item.isActve" (click)="onSelect(item.id,!item.isActve )"  class="ng-untouched ng-pristine ng-valid">
+                        <!-- <div class="slider round">
                             <span class="on">INACTIVE</span>
-                        </div>
+                        </div> -->
                     </label>
                 </td>
              </tr>  

@@ -17,7 +17,7 @@ interface AdminUserList{
   styleUrls: ['./admin-user.component.css']
 })
 export class AdminUserComponent {
-  public loading = true;
+  public loading = false;
   private _miyabiService: MiyabiServicesService;
   list1:AdminUserList[]=[];
   constructor(private miyabiService: MiyabiServicesService){

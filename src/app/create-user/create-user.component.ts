@@ -1,17 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { MiyabiServicesService } from '../Services/miyabi-services.service';
-
-interface createUser{
-  role: string,
-  language: string,
-  firstName: string,
-  lastName: string,
-  email: string,
-  phone: string,
-  instagramId: string,
-  password: string
-}
+import { ɵafterNextNavigation } from '@angular/router';
 
 @Component({
   selector: 'app-create-user',
@@ -25,22 +15,30 @@ export class CreateUserComponent {
   }
 
   createUserDTO = new FormGroup({
-    role: new FormControl(''),
-    language: new FormControl(''),
-    firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    email: new FormControl(''),
-    phone: new FormControl(''),
-    instagramId: new FormControl(''),
-    password: new FormControl(''),
-    confirmPassword: new FormControl('')
+    role: new FormControl(null),
+    language: new FormControl(null),
+    firstName: new FormControl(null),
+    lastName: new FormControl(null),
+    email: new FormControl(null),
+    phone: new FormControl(null),
+    instagramId: new FormControl(null),
+    password: new FormControl(null),
+    confirmPassword: new FormControl(null)
   })
   createUser(){
     console.log(this.createUserDTO.value);
     this.miyabiService
     .createUser(this.createUserDTO.value)
-    .subscribe((res)=>{
-      console.log(res);
+    .subscribe({
+      next: (res)=>{
+
+        //@ts-ignore
+        alert(res.status);
+      },
+      error(err) {
+        alert(JSON.stringify(err.error.errors));
+        
+      },
     })
   }
 }

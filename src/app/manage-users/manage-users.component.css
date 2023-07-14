@@ -48,10 +48,10 @@ input {
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;
-    margin-top: 20px;
-    margin-left: 380px;
-    margin-right: 20px;
-    margin-bottom: 10px;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
     background: #fff;
     border-radius: 5px;
     height: 80vh;
@@ -63,14 +63,7 @@ ul {
     list-style: none;
 }
 
-.marathon-page-list-table {
-    width: 100%;
-    text-align: center;
-}
 
-.marathon-page-list {
-    border-radius: 5px;
-}
 
 .add-module{
     background-color: #4285f4;
@@ -107,11 +100,18 @@ td {
     height: 70%;
     margin-left: 40px;
     margin-right: 40px;
+    border-radius: 5px;
+ 
+    .marathon-page-list-table {
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
 .pagination label{
     /* width:100%; */
-    margin: 15px;
+    margin-right: 10px;
     /* text-align: center; */
     cursor: pointer;
     /* margin-bottom: 0; */

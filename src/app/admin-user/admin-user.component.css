@@ -49,6 +49,7 @@ input {
     height: 85vh;
     box-shadow: 0 2px 9px rgba(51, 51, 51, .18823529411764706);
     padding: 0;
+    /* border: 2px solid black; */
 }
 
 ul {
@@ -117,7 +118,7 @@ td {
 
 .pagination label{
     /* width:100%; */
-    margin: 15px;
+    margin: 1%;
     /* text-align: center; */
     cursor: pointer;
     /* margin-bottom: 0; */
